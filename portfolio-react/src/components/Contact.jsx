@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 
 const Contact = () => {
   return (
@@ -45,7 +45,15 @@ const Contact = () => {
         </div>
       </div>
       <div className="go-top">
-        <a className="smoothscroll" title="Back to Top" href="#top">
+        <a 
+          className="smoothscroll" 
+          title="Back to Top" 
+          href="#top"
+          onClick={(e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }}
+        >
           <i className="fa fa-angle-up" aria-hidden="true"></i>
         </a>
       </div>

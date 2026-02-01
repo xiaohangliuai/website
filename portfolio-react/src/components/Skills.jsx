@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 
 const Skills = () => {
   const skillsData = [
@@ -98,7 +98,21 @@ const Skills = () => {
           ))}
         </div>
         <ul className="actions">
-          <li><a href="#projects" className="button">View Projects</a></li>
+          <li>
+            <a 
+              href="#projects" 
+              className="button"
+              onClick={(e) => {
+                e.preventDefault();
+                const target = document.querySelector('#projects');
+                if (target) {
+                  target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+              }}
+            >
+              View Projects
+            </a>
+          </li>
         </ul>
       </div>
     </section>

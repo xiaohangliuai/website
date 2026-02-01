@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 
 const Hero = () => {
   return (
@@ -11,7 +11,17 @@ const Hero = () => {
           <p>Software Engineer / AI Agent / Machine Learning Engineer</p>
         </div>
       </div>
-      <a href="#intro" className="home-scroll smoothscroll">
+      <a 
+        href="#intro" 
+        className="home-scroll smoothscroll"
+        onClick={(e) => {
+          e.preventDefault();
+          const target = document.querySelector('#intro');
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }}
+      >
         <span className="home-scroll__text">Scroll Down</span>
         <span className="home-scroll__icon"></span>
       </a>

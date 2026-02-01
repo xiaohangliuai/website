@@ -1,4 +1,4 @@
-﻿import React, { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Hero from './components/Hero';
 import Sidebar from './components/Sidebar';
 import About from './components/About';
@@ -35,6 +35,16 @@ function App() {
         await loadScript('/assets/js/main.js');
         await loadScript('/js/main.js');
         await loadScript('/js/script.js');
+        
+        // Re-initialize scrolly after all scripts loaded
+        setTimeout(() => {
+          if (window.jQuery) {
+            window.jQuery('.scrolly').scrolly({
+              speed: 1000,
+              offset: 0
+            });
+          }
+        }, 500);
       } catch (error) {
         console.error('Error loading scripts:', error);
       }

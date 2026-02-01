@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 
 const ProjectsSection = () => {
   const projectsData = [
@@ -6,7 +6,7 @@ const ProjectsSection = () => {
       title: 'PackMind+ App (iOS & Android)',
       description: '- PackMind+ is your ultimate companion for staying organized with personalized packing lists for any occasion. Create custom packing lists for travel, shopping, sports, and more with our intuitive interface. Never forget essential items again with reminders, visual tracking, and easy sharing capabilities.',
       image: '/images/packmindplus/01.png',
-      link: 'packmindplus-support.html',
+      link: '/packmindplus-support.html',
       position: 'center center'
     },
     {
@@ -27,7 +27,7 @@ const ProjectsSection = () => {
       title: 'Income Prediction Machine Learning Project',
       description: '- Build a Machine Learning web application from scratch in Python with Streamlit. Use real world data from the stack overflow developer survey to build a machine learning model.',
       image: '/images/project-03/img01.png',
-      link: 'project-03.html',
+      link: '/project-03.html',
       position: 'top center'
     }
   ];

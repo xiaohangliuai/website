@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Privacy and legal documents
+public/privacy-policy.html
+public/terms-of-service.html
+public/packmindplus-support.html
