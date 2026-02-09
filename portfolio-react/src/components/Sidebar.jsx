@@ -18,7 +18,6 @@ const Sidebar = () => {
         <nav>
           <ul>
             <li><a href="#intro" onClick={(e) => handleClick(e, '#intro')}>About</a></li>
-            <li><a href="#tech-skills" onClick={(e) => handleClick(e, '#tech-skills')}>Skills</a></li>
             <li><a href="#projects" onClick={(e) => handleClick(e, '#projects')}>Projects</a></li>
             <li><a href="#contact" onClick={(e) => handleClick(e, '#contact')}>Contact</a></li>
           </ul>

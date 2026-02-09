@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import Hero from './components/Hero';
 import Sidebar from './components/Sidebar';
 import About from './components/About';
-import Skills from './components/Skills';
 import ProjectsSection from './components/ProjectsSection';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -60,7 +59,6 @@ function App() {
         <Sidebar />
         <div id="wrapper">
           <About />
-          <Skills />
           <ProjectsSection />
           <Contact />
         </div>

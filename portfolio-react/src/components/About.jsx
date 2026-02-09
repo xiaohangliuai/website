@@ -1,17 +1,6 @@
 import React from 'react';
 
 const About = () => {
-  const handleScrollToSkills = (e) => {
-    e.preventDefault();
-    const target = document.querySelector('#tech-skills');
-    if (target) {
-      target.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-    }
-  };
-
   return (
     <section id="intro" className="wrapper style1 fullscreen fade-up">
       <div className="inner">
@@ -26,9 +15,6 @@ const About = () => {
           and leveraging data to uncover meaningful insights that drive impactful decisions.
           I am passionate about exploring new technologies and constantly pushing the boundaries of what's possible.
         </p>
-        <ul className="actions">
-          <li><a href="#tech-skills" className="button scrolly" onClick={handleScrollToSkills}>View Skills</a></li>
-        </ul>
       </div>
     </section>
   );

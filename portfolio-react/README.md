@@ -1,13 +1,12 @@
 # Portfolio Website - React & Vite
 
-A modern, responsive portfolio website built with React and Vite, showcasing projects, skills, and professional experience in AI/ML and software engineering.
+A modern, responsive portfolio website built with React and Vite, showcasing projects and professional experience in AI/ML and software engineering.
 
 ## 🚀 Features
 
 - **Responsive Design** - Optimized for desktop, tablet, and mobile devices
-- **Smooth Navigation** - Sidebar navigation with smooth scrolling to sections
+- **Smooth Navigation** - Top navigation bar with smooth scrolling to sections
 - **Project Showcase** - Interactive project cards with images and descriptions
-- **Skills Display** - Comprehensive skills organized by category
 - **Contact Section** - Social media links and contact information
 - **Modern Tech Stack** - Built with React 19 and Vite 7 for optimal performance
 
@@ -80,8 +79,7 @@ portfolio-react/
 │   │   ├── Hero.jsx
 │   │   ├── Preloader.jsx
 │   │   ├── ProjectsSection.jsx
-│   │   ├── Sidebar.jsx
-│   │   └── Skills.jsx
+│   │   └── Sidebar.jsx
 │   ├── App.jsx         # Main app component
 │   ├── main.jsx        # Entry point
 │   └── index.css       # Global styles
@@ -118,9 +116,6 @@ Edit `src/components/ProjectsSection.jsx` and add to the `projectsData` array:
   position: 'center center'
 }
 ```
-
-### Updating Skills
-Edit `src/components/Skills.jsx` and modify the `skillsData` array with your skills.
 
 ### Changing Contact Info
 Edit `src/components/Contact.jsx` to update email, location, and social media links.
