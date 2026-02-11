@@ -1,4 +1,6 @@
-import React from 'react';
+'use client'
+
+import React from 'react'
 
 const ProjectsSection = () => {
   const projectsData = [
@@ -30,7 +32,7 @@ const ProjectsSection = () => {
       link: '/project-03.html',
       position: 'top center'
     }
-  ];
+  ]
 
   return (
     <section id="projects" className="wrapper style2 spotlights">
@@ -55,7 +57,7 @@ const ProjectsSection = () => {
         </section>
       ))}
     </section>
-  );
-};
+  )
+}
 
-export default ProjectsSection;
+export default ProjectsSection

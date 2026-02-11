@@ -1,4 +1,6 @@
-import React from 'react';
+'use client'
+
+import React from 'react'
 
 const Hero = () => {
   return (
@@ -15,10 +17,10 @@ const Hero = () => {
         href="#intro" 
         className="home-scroll smoothscroll"
         onClick={(e) => {
-          e.preventDefault();
-          const target = document.querySelector('#intro');
+          e.preventDefault()
+          const target = document.querySelector('#intro')
           if (target) {
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' })
           }
         }}
       >
@@ -26,7 +28,7 @@ const Hero = () => {
         <span className="home-scroll__icon"></span>
       </a>
     </section>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero
